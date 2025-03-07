@@ -1,4 +1,5 @@
 import './App.css';
+import Home from './pages/Home';
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
 
@@ -23,7 +24,7 @@ const RoutesWeb = () => {
     <>
       {/* {loading && <Loader />} */}
       <Routes>
-
+        <Route path="/game" element={<Home />} />
       </Routes>
       {/* {!isAdminRoute && <Footer />}       Conditionally render Footer */}
     </>
